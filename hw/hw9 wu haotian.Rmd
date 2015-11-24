@@ -1,0 +1,49 @@
+---
+title: "hw9 wu haotian"
+author: "Haotian Wu"
+date: "November 23, 2015"
+output: html_document
+---
+
+#### 1. Initial GitHub workflow
+
+a. Pat yourselves on the back if you were able to "fork", then "clone" this repo. Maybe massage your brain, too.
+
+b. Re-save this file with your last and first name as well as altering the title of this file.
+
+#### 2. if-then-else
+
+is.a.number <- function(x) {
+  if (is.numeric(x)==TRUE)
+    return("Is a number")
+  if (is.na(x)==TRUE)
+    return("Is NA")
+  else 
+    return ("I have no clue")
+}
+
+#### 3. primes 
+
+prime_function <- function(q) {
+  if(q<3)
+    stop("please enter a number between 3-100")
+  if(q>100)
+    stop("please enter a number between 3-100")
+  else q == 2L || all(q %% 2L:floor(sqrt(q)) != 0)
+}
+
+#### 4. ggplot2
+
+a. Using `ggplot2`, create a function that when inputting a single continuous variable, it will print out a histogram. Include arguments to alter the theme, x-variable label, a title, and a `TRUE` or `FALSE` option to create a density plot.
+
+
+
+
+b. Similarly, create a function that when inputting two continuous variables, it will print a scatterplot. Additionally, in the console, print the mean and variance of the two variables as well as the coefficient value of the specified x-variable.  Include arguments to alter the title and a `TRUE` or `FALSE` option to include a smoothing method of *lm* aka a simple linear model line in/on the scatterplot.
+
+
+#### 5. Remaining GitHub workflow
+
+a. Now finish off the workflow of submitting your homework by "committing" the changes locally, "pushing" the changes to YOUR online repo, and finally creating a pull request. 
+
+b. Pat yourselves on the back, again.  You deserved it.
